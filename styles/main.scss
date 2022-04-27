@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800;900&display=swap');
 $font-family-main : 'Lexend Deca', sans-serif;
 $secondary-color : #00BA7C;
+$grey :#ACACAC;
+
 :root{
 --font-fam : #{$font-family-main};
 }
@@ -234,5 +236,58 @@ body{
     font-size: 1rem ;
     cursor: pointer;
     background-color: $secondary-color;
+  }
+}
+
+.create-product{
+  padding: 2rem 10rem;
+  img{
+    width:150px;
+  }
+
+  .create-product-section{
+    h1{
+      width: fit-content;
+      margin: 1rem;
+    }
+
+    .create-product-flex{
+      display: flex;
+      padding-left: 1rem;
+      padding-top: 1rem;
+    
+      img{
+        width: 300px;
+        object-fit: contain;
+        border-radius: 1rem;
+        margin-top: 0;
+        margin-bottom: auto;
+      }
+
+      .create-product-flex-right{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+
+        h2{
+          margin-top: 0;
+          margin-bottom: 1.5rem;
+           font-weight: 500;
+           color: $grey;
+        }
+
+        input{
+           outline: none;
+           border: none;
+           background-color: $grey;
+           border-radius: .6rem;
+           font-size: 1.2rem;
+           color: white;
+           padding: .8rem 1.3rem;
+           margin-bottom: 1.5rem;
+           font-family: $font-family-main;
+        }
+      }
+    }
   }
 }

@@ -17,7 +17,7 @@ export default function CreateSeller(props: any) {
     };
 
     fetchAcc();
-  });
+  }, []);
 
   return (
     <Seller>
